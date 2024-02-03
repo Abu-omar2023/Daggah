@@ -73,14 +73,16 @@ ul, li {
 
 header, nav, section, article, aside, footer, hgroup {
   display: block;
+  font-family: 'Kufam', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Kufam', sans-serif;
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Kufam', sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -117,6 +119,11 @@ html,
 body {
   background: #fff;
   font-family: 'Poppins', sans-serif;
+  font-family: 'Fuggles', cursive;
+font-family: 'Kufam', sans-serif;
+font-family: 'Marhey', sans-serif;
+font-family: 'Noto Kufi Arabic', sans-serif;
+font-family: 'Rubik', sans-serif;
 }
 
 ::selection {
@@ -221,6 +228,7 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #1e1e1e!important;
+  font-family: 'Kufam', sans-serif;
 }
 
 .background-header .main-nav .nav li:hover a {
