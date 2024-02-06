@@ -2240,6 +2240,7 @@ contact Us Page
 */
 
 .contact-us {
+  direction: rtl;
   margin-top: 90px;
   border-bottom: 3px dotted #eee;
   padding-bottom: 90px;
@@ -2247,6 +2248,12 @@ contact Us Page
 
 .contact-us .section-heading {
   margin-bottom: 40px;
+  
+}
+
+.contact-us .section-heading h2{
+  color: var(--main--color);
+  text-align: start;
 }
 
 .contact-us #map {
@@ -2268,7 +2275,7 @@ contact Us Page
 }
 
 .contact-us form input::focus {
-  border-color: #2a2a2a;
+  border-color: var(--main--color);
   border-radius: 0px;
 }
 
@@ -2291,8 +2298,9 @@ contact Us Page
 }
 
 .contact-us form textarea::focus {
-  border-color: #2a2a2a;
+  border-color: var(--main--color);
   border-radius: 0px;
+  outline: var(--main--color);
 }
 
 .contact-us form button {
@@ -2301,7 +2309,7 @@ contact Us Page
   display: inline-block;
   text-align: center;
   line-height: 44px;
-  background-color: #2a2a2a;
+  background-color: var(--main--color);
   box-shadow: none;
   border: 1px solid transparent;
   color: #fff;
@@ -2310,8 +2318,8 @@ contact Us Page
 
 .contact-us form button:hover {
   background-color: #fff;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 1px solid var(--main--color);
+  color: var(--main--color);
 }
 
 
