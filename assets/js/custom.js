@@ -112,6 +112,17 @@
 
 		// animation h2 start
 
+		$(".container-fluid .left-content").scrollTop(function(){
+			
+				$(this).addClass("vivify fadeInRight duration-1500")
+			
+		});
+		$(".container-fluid .right-content").scrollTop(function(){
+			
+			$(this).addClass("vivify fadeInLeft duration-1500")
+		
+	});
+
 		$(window).scroll(function(){
 			$("#men h2").scrollTop(function(){
 				if($(window).scrollTop() >= $("#men h2").offset().top - 600){
@@ -122,9 +133,12 @@
 			});
 			$("#men .container:nth-child(2)").scrollTop(function(){
 				if($(window).scrollTop() >= $(this).offset().top - 600){
+					
+						$(this).css({
+							"visibility":"visible",
+						});
+					
 					$(this).addClass("vivify fadeInLeft duration-1500")
-				}else{
-					$(this).removeClass("vivify fadeInLeft duration-1500")
 				}
 			});
 			
@@ -137,9 +151,10 @@
 			});
 			$("#women .container:nth-child(2)").scrollTop(function(){
 				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).css({
+						"visibility":"visible",
+					});
 					$(this).addClass("vivify fadeInLeft duration-1500")
-				}else{
-					$(this).removeClass("vivify fadeInLeft duration-1500")
 				}
 			});
 			$("#kids h2").scrollTop(function(){
@@ -151,9 +166,10 @@
 			});
 			$("#kids .container:nth-child(2)").scrollTop(function(){
 				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).css({
+						"visibility":"visible",
+					});
 					$(this).addClass("vivify fadeInLeft duration-1500")
-				}else{
-					$(this).removeClass("vivify fadeInLeft duration-1500")
 				}
 			});
 			$("#explore .left-content").scrollTop(function(){
@@ -189,8 +205,6 @@
 			$("#social .row.images").scrollTop(function(){
 				if($(window).scrollTop() >= $(this).offset().top - 600){
 					$($(this)).addClass("vivify fadeInLeft duration-1500")
-				}else{
-					$($(this)).removeClass("vivify fadeInLeft duration-1500")
 				}
 			});
 

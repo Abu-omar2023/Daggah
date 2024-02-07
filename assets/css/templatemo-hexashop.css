@@ -822,6 +822,11 @@ Men
   border-bottom: 3px dotted #eee;
 }
 
+#men .container:nth-child(2){
+ 
+  visibility: hidden;
+}
+
 #men .section-heading {
   margin-bottom: 60px;
 }
@@ -994,6 +999,11 @@ Women
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
+
+#women .container:nth-child(2){
+visibility: hidden;
+}
+
 #women .section-heading h2{
   margin-bottom: 20px;
   color: var(--main--color);
@@ -1162,6 +1172,10 @@ Kids
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
+
+#kids .container:nth-child(2){
+  visibility: hidden;
+  }
 
 #kids .section-heading {
   margin-bottom: 60px;
