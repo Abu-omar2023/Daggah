@@ -109,6 +109,94 @@
 
 	$(document).ready(function () {
 	    $(document).on("scroll", onScroll);
+
+		// animation h2 start
+
+		$(window).scroll(function(){
+			$("#men h2").scrollTop(function(){
+				if($(window).scrollTop() >= $("#men h2").offset().top - 600){
+					$("#men h2").addClass("vivify fadeInRight duration-1500")
+				}else{
+					$("#men h2").removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+			$("#men .container:nth-child(2)").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).addClass("vivify fadeInLeft duration-1500")
+				}else{
+					$(this).removeClass("vivify fadeInLeft duration-1500")
+				}
+			});
+			
+			$("#women h2").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInRight duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+			$("#women .container:nth-child(2)").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).addClass("vivify fadeInLeft duration-1500")
+				}else{
+					$(this).removeClass("vivify fadeInLeft duration-1500")
+				}
+			});
+			$("#kids h2").scrollTop(function(){
+				if($(window).scrollTop() >= $("#kids h2").offset().top - 600){
+					$("#kids h2").addClass("vivify fadeInRight duration-1500")
+				}else{
+					$("#kids h2").removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+			$("#kids .container:nth-child(2)").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).addClass("vivify fadeInLeft duration-1500")
+				}else{
+					$(this).removeClass("vivify fadeInLeft duration-1500")
+				}
+			});
+			$("#explore .left-content").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInRight duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+			$("#explore .right-content .first-image").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInLeft duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInLeft duration-1500")
+				}
+			});
+			$("#explore .right-content .second-image").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInRight duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+
+			$("#social .section-heading h2").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInRight duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInRight duration-1500")
+				}
+			});
+			
+			$("#social .row.images").scrollTop(function(){
+				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$($(this)).addClass("vivify fadeInLeft duration-1500")
+				}else{
+					$($(this)).removeClass("vivify fadeInLeft duration-1500")
+				}
+			});
+
+		   });
+
+	
 	    
 	    //smoothscroll
 	    $('.scroll-to-section a[href^="#"]').on('click', function (e) {
@@ -165,6 +253,7 @@
 			}, 300);
 		});
 	});
+
 
 
 	// Window Resize Mobile Menu Fix
