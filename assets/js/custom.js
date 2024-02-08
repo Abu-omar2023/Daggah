@@ -126,6 +126,9 @@
 		$(window).scroll(function(){
 			$("#men h2").scrollTop(function(){
 				if($(window).scrollTop() >= $("#men h2").offset().top - 600){
+					$(this).css({
+						"visibility":"visible",
+					});
 					$("#men h2").addClass("vivify fadeInRight duration-1500")
 				}else{
 					$("#men h2").removeClass("vivify fadeInRight duration-1500")
@@ -144,6 +147,9 @@
 			
 			$("#women h2").scrollTop(function(){
 				if($(window).scrollTop() >= $(this).offset().top - 600){
+					$(this).css({
+						"visibility":"visible",
+					});
 					$($(this)).addClass("vivify fadeInRight duration-1500")
 				}else{
 					$($(this)).removeClass("vivify fadeInRight duration-1500")
@@ -158,6 +164,9 @@
 				}
 			});
 			$("#kids h2").scrollTop(function(){
+				$(this).css({
+					"visibility":"visible",
+				});
 				if($(window).scrollTop() >= $("#kids h2").offset().top - 600){
 					$("#kids h2").addClass("vivify fadeInRight duration-1500")
 				}else{

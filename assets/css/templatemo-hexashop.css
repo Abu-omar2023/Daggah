@@ -835,7 +835,8 @@ Men
   width: 100%;
   margin-bottom: 20px;
   color: var(--main--color);
-  text-align: end;
+  visibility: hidden;
+
 }
 
 #men .item .down-content {
@@ -1008,6 +1009,7 @@ visibility: hidden;
   margin-bottom: 20px;
   color: var(--main--color);
   text-align: end;
+  visibility: hidden;
 }
 #women .section-heading {
   margin-bottom: 60px;
@@ -1185,6 +1187,7 @@ Kids
   margin-bottom: 20px;
   color: var(--main--color);
   text-align: end;
+  visibility: hidden;
 }
 
 #kids .section-heading span{
